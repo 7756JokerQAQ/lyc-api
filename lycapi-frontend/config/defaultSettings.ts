@@ -10,7 +10,11 @@ const Settings: LayoutSettings & {
   navTheme: 'light',
   // 拂晓蓝
   colorPrimary: '#1890ff',
+<<<<<<< HEAD
   layout: 'top',
+=======
+  layout: 'mix',
+>>>>>>> 173d163 (前端)
   contentWidth: 'Fluid',
   fixedHeader: false,
   fixSiderbar: true,

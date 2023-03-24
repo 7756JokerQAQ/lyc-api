@@ -31,7 +31,11 @@ interface InitialState {
 }
 
 
+<<<<<<< HEAD
 createTime string(date-time)
+=======
+createTime	string(date-time)
+>>>>>>> 173d163 (前端)
 description	string
 id	integer(int64)
 isDelete	integer(int32)

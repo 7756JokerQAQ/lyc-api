@@ -17,12 +17,30 @@ declare namespace API {
     message?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type BaseResponseListInterfaceInfoVO = {
+    code?: number;
+    data?: InterfaceInfoVO[];
+    message?: string;
+  };
+
+>>>>>>> 173d163 (前端)
   type BaseResponseListPost = {
     code?: number;
     data?: Post[];
     message?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type BaseResponseListUserInterfaceInfo = {
+    code?: number;
+    data?: UserInterfaceInfo[];
+    message?: string;
+  };
+
+>>>>>>> 173d163 (前端)
   type BaseResponseListUserVO = {
     code?: number;
     data?: UserVO[];
@@ -35,6 +53,15 @@ declare namespace API {
     message?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type BaseResponseobject = {
+    code?: number;
+    data?: Record<string, any>;
+    message?: string;
+  };
+
+>>>>>>> 173d163 (前端)
   type BaseResponsePageInterfaceInfo = {
     code?: number;
     data?: PageInterfaceInfo;
@@ -47,6 +74,15 @@ declare namespace API {
     message?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type BaseResponsePageUserInterfaceInfo = {
+    code?: number;
+    data?: PageUserInterfaceInfo;
+    message?: string;
+  };
+
+>>>>>>> 173d163 (前端)
   type BaseResponsePageUserVO = {
     code?: number;
     data?: PageUserVO;
@@ -65,6 +101,15 @@ declare namespace API {
     message?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type BaseResponseUserInterfaceInfo = {
+    code?: number;
+    data?: UserInterfaceInfo;
+    message?: string;
+  };
+
+>>>>>>> 173d163 (前端)
   type BaseResponseUserVO = {
     code?: number;
     data?: UserVO;
@@ -90,6 +135,18 @@ declare namespace API {
     id?: number;
   };
 
+<<<<<<< HEAD
+=======
+  type getUserInterfaceInfoByIdUsingGETParams = {
+    /** id */
+    id?: number;
+  };
+
+  type IdRequest = {
+    id?: number;
+  };
+
+>>>>>>> 173d163 (前端)
   type InterfaceInfo = {
     createTime?: string;
     description?: string;
@@ -98,6 +155,10 @@ declare namespace API {
     method?: string;
     name?: string;
     requestHeader?: string;
+<<<<<<< HEAD
+=======
+    requestParams?: string;
+>>>>>>> 173d163 (前端)
     responseHeader?: string;
     status?: number;
     updateTime?: string;
@@ -110,21 +171,57 @@ declare namespace API {
     method?: string;
     name?: string;
     requestHeader?: string;
+<<<<<<< HEAD
+=======
+    requestParams?: string;
+>>>>>>> 173d163 (前端)
     responseHeader?: string;
     url?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type InterfaceInfoInvokeRequest = {
+    id?: number;
+    userRequestParams?: string;
+  };
+
+>>>>>>> 173d163 (前端)
   type InterfaceInfoUpdateRequest = {
     description?: string;
     id?: number;
     method?: string;
     name?: string;
     requestHeader?: string;
+<<<<<<< HEAD
+=======
+    requestParams?: string;
+>>>>>>> 173d163 (前端)
     responseHeader?: string;
     status?: number;
     url?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type InterfaceInfoVO = {
+    createTime?: string;
+    description?: string;
+    id?: number;
+    isDelete?: number;
+    method?: string;
+    name?: string;
+    requestHeader?: string;
+    requestParams?: string;
+    responseHeader?: string;
+    status?: number;
+    totalNum?: number;
+    updateTime?: string;
+    url?: string;
+    userId?: number;
+  };
+
+>>>>>>> 173d163 (前端)
   type listInterfaceInfoByPageUsingGETParams = {
     current?: number;
     description?: string;
@@ -206,6 +303,35 @@ declare namespace API {
     userRole?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type listUserInterfaceInfoByPageUsingGETParams = {
+    current?: number;
+    id?: number;
+    interfaceInfoId?: number;
+    leftNum?: number;
+    pageSize?: number;
+    sortField?: string;
+    sortOrder?: string;
+    status?: number;
+    totalNum?: number;
+    userId?: number;
+  };
+
+  type listUserInterfaceInfoUsingGETParams = {
+    current?: number;
+    id?: number;
+    interfaceInfoId?: number;
+    leftNum?: number;
+    pageSize?: number;
+    sortField?: string;
+    sortOrder?: string;
+    status?: number;
+    totalNum?: number;
+    userId?: number;
+  };
+
+>>>>>>> 173d163 (前端)
   type listUserUsingGETParams = {
     createTime?: string;
     current?: number;
@@ -330,6 +456,22 @@ declare namespace API {
     total?: number;
   };
 
+<<<<<<< HEAD
+=======
+  type PageUserInterfaceInfo = {
+    countId?: string;
+    current?: number;
+    maxLimit?: number;
+    optimizeCountSql?: boolean;
+    orders?: OrderItem[];
+    pages?: number;
+    records?: UserInterfaceInfo[];
+    searchCount?: boolean;
+    size?: number;
+    total?: number;
+  };
+
+>>>>>>> 173d163 (前端)
   type PageUserVO = {
     countId?: string;
     current?: number;
@@ -392,10 +534,18 @@ declare namespace API {
   };
 
   type User = {
+<<<<<<< HEAD
+=======
+    accessKey?: string;
+>>>>>>> 173d163 (前端)
     createTime?: string;
     gender?: number;
     id?: number;
     isDelete?: number;
+<<<<<<< HEAD
+=======
+    secretKey?: string;
+>>>>>>> 173d163 (前端)
     updateTime?: string;
     userAccount?: string;
     userAvatar?: string;
@@ -413,6 +563,35 @@ declare namespace API {
     userRole?: string;
   };
 
+<<<<<<< HEAD
+=======
+  type UserInterfaceInfo = {
+    createTime?: string;
+    id?: number;
+    interfaceInfoId?: number;
+    isDelete?: number;
+    leftNum?: number;
+    status?: number;
+    totalNum?: number;
+    updateTime?: string;
+    userId?: number;
+  };
+
+  type UserInterfaceInfoAddRequest = {
+    interfaceInfoId?: number;
+    leftNum?: number;
+    totalNum?: number;
+    userId?: number;
+  };
+
+  type UserInterfaceInfoUpdateRequest = {
+    id?: number;
+    leftNum?: number;
+    status?: number;
+    totalNum?: number;
+  };
+
+>>>>>>> 173d163 (前端)
   type UserLoginRequest = {
     userAccount?: string;
     userPassword?: string;
