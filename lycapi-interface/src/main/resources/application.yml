@@ -1,0 +1,10 @@
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+
+#测试用例 注入相应的方法
+lycapi:
+  clint:
+    access-key: yupi
+    secret-key: abcdefg
